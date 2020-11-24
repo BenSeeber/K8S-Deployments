@@ -13,4 +13,4 @@ spec:
       memory: "2048Mi"
      requests:
       memory: "2048Mi"
-    command: [ "sleep", "1200" ]
+    command: [ "sleep", "120000" ]
