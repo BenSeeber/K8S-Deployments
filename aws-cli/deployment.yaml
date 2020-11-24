@@ -1,6 +1,8 @@
 apiVersion: v1
 kind: Pod
 metadata:
+  labels:
+      test: liveness
   name: aws-cli
 spec:
   containers:
@@ -8,7 +10,7 @@ spec:
     image: ohben/aws-cli
     resources:
      limits:
-      memory: "1024Mi"
+      memory: "2048Mi"
      requests:
-      memory: "512Mi"
-    command: [ "sleep", "600" ]
+      memory: "2048Mi"
+    command: [ "sleep", "1200" ]

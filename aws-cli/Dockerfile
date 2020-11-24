@@ -8,5 +8,5 @@ RUN echo $TZ > /etc/timezone && \
     dpkg-reconfigure -f noninteractive tzdata && \
     apt-get clean
 
-RUN apt-get update && apt-get install -y awscli
+RUN apt-get update && apt-get install -y awscli htop tmux
 
