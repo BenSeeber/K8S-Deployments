@@ -5,5 +5,10 @@ metadata:
 spec:
   containers:
   - name: aws-cli
-    image: curlimages/curl 
+    image: ohben/aws-cli
+    resources:
+     limits:
+      memory: "1024Mi"
+     requests:
+      memory: "512Mi"
     command: [ "sleep", "600" ]
